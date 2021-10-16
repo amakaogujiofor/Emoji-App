@@ -1,5 +1,5 @@
 body {
-  background-color: #6643b5;
+  background-color: #fdfdcb;
   text-align: center;
   max-width: 100%;
 }
@@ -8,7 +8,7 @@ h1 {
   margin-top: 100px;
   font-family: cursive;
   font-size: 70px;
-  color: #95e8d7;
+  color: #ec729c;
 }
 
 span {
@@ -19,7 +19,6 @@ span {
 input {
   box-sizing: border-box;
   margin: 20px;
-  width: 20%;
   padding: 10px;
   background-color: #d9f2ff;
   border-style: none;
@@ -31,11 +30,16 @@ input {
 button {
   box-sizing: content-box;
   margin: 10px;
-  width: 10%;
+  color: #6c5b7c;
   padding: 10px;
   background-color: #95e8d7;
   border-style: none;
   border: 2px solid #95e8d7;
   border-radius: 20px;
   font-size: larger;
+}
+
+#front-btn {
+  background-color: #ec729c;
+  border-style: none;
 }

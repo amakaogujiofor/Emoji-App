@@ -3,6 +3,8 @@ const container = document.getElementById("emojiContainer");
 const button = document.getElementById("push-btn");
 const input = document.getElementById("emoji-input");
 const unshift = document.getElementById("front-btn");
+const pop = document.getElementById("pop-btn");
+const shift = document.getElementById("shift-btn");
 
 // for (let i = 0; i < myEmojis.length; i++) {
 //   const emoji = document.createElement("span");
@@ -36,4 +38,20 @@ unshift.addEventListener("click", function () {
     container.innerHTML = "";
     render();
   }
+});
+
+// shift Button
+shift.addEventListener("click", function () {
+  myEmojis.shift();
+  input.value = "";
+  container.innerHTML = "";
+  render();
+});
+
+// Pop Button
+pop.addEventListener("click", function () {
+  myEmojis.pop();
+  input.value = "";
+  container.innerHTML = "";
+  render();
 });

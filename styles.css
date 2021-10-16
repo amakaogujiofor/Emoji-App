@@ -39,7 +39,8 @@ button {
   font-size: larger;
 }
 
-#front-btn {
+#front-btn,
+#pop-btn {
   background-color: #ec729c;
   border-style: none;
 }

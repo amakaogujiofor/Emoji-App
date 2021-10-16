@@ -1,5 +1,7 @@
 const myEmojis = ["👨‍💻", "⛷", "🍲"];
 const container = document.getElementById("emojiContainer");
+const button = document.getElementById("push-btn");
+const input = document.getElementById("emoji-input");
 
 // for (let i = 0; i < myEmojis.length; i++) {
 //   const emoji = document.createElement("span");
@@ -10,5 +12,12 @@ const container = document.getElementById("emojiContainer");
 for (let index of myEmojis) {
   console.log(container);
 }
-
 container.innerHTML = `<span>${myEmojis}</span>`;
+
+button.addEventListener("click", function () {
+  if (input.value) {
+    myEmojis.push(input.value);
+    input.value = "";
+    console.log(myEmojis);
+  }
+});
